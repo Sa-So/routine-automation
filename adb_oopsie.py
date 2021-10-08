@@ -17,6 +17,7 @@ class android:
         t.sleep(1)
         device.shell('input touchscreen swipe 500 1200 500 500 1000')
         device.shell('input text '+pw)
+        device.shell('input swipe 535 2342 535 2342 150')
         t.sleep(1)
 
     def lock(self):
@@ -47,9 +48,9 @@ class android:
         device.shell('input text '+url)
         device.shell('input keyevent 66')
 
-a=android()
-a.unlock()
-t.sleep(1)
-a.google_()
+# a=android()
+# a.unlock()
+# t.sleep(1)
+# a.google_()
 #a.chrome()
 
